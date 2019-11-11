@@ -14,7 +14,7 @@
     background-position: center center;
     /* background-color: rgba(0, 0, 0, 0.71);
     background-image: url('../asset/IMG_20190721_171536.jpg'); */
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url('../asset/IMG_20190721_171536.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url('https://pro2-bar-s3-cdn-cf1.myportfolio.com/122f938308bea28bfd4d351b48c5df72/98e9c642-0beb-4185-a8ef-199541a0e191_rw_1920.jpg?h=c42bbb87a6a2f043e949fce09bb1a42d');
     color: white;
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
@@ -67,7 +67,7 @@ btn-circle {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url('../asset/IMG_5411.JPG');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url('https://pro2-bar-s3-cdn-cf.myportfolio.com/122f938308bea28bfd4d351b48c5df72/13f49d2f-7dde-45a0-9f80-a57241d4856e_rw_1920.jpg?h=bcb1a4a995bc1fcd7fe0e993263e7ab5');
 }
 
 .btn-circle.btn-lg {
