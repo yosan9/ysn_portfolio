@@ -136,16 +136,34 @@
 
         <!-- //End of Skils -->
 
-        <!-- Video Prfile -->
+        <!-- Video Profile -->
         <div class="section-2">
             <div class="card bg-dark text-white">
                 <!-- <img src="../asset/IMG_20190721_172507.jpg" class="card-img-top" alt="..."> -->
-                <div class="card-img-overlay justify-content-center">
-                    <button type="button" class="btn btn-primary btn-circle btn-lg"><i
-                            class="glyphicon glyphicon-list"></i></button>
+                <div class="card-img-overlay text-center">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="text-center display-4 mt-5">
+                                    Watch My Video Profile </h1>
+                                <p class="text-center mt-5">
+                                 <a href="#headerPopup" id="headerVideoLink" target="_blank"
+                                        class="btn btn-warning btn-circle btn-circle-sm m-1 popup-modal"><i
+                                            class="fa fa-play-circle"></i>WATCH</a>
+                                </p>
+                                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                                    <iframe class="embed-responsive-item" width="854" height="480"
+                                        src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0"
+                                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
         <!-- End of Video Profile -->
 
 
@@ -260,7 +278,8 @@
 
     <!-- Skils -->
     <script src="../js/circle-progress.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 
 
 
@@ -316,6 +335,12 @@
                     $("." + selectedClass).fadeIn().addClass('animation');
                     $("#gallery").fadeTo(300, 1);
                 }, 300);
+            });
+        });
+        $(document).ready(function () {
+            $('#headerVideoLink').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             });
         });
     </script>
