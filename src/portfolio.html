@@ -8,17 +8,13 @@
     <title>YSN GTR Porfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/jquery.wm-gridfolio-1.0.css">
-    <link rel="stylesheet" href="../css/jquery.wm-gridfolio-1.0.min.css">
-
-    <link rel="stylesheet" href="../js/jquery.wm-gridfolio-1.0.min.js">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="..//js/jquery.wm-gridfolio-1.0.min.js"></script>
-
-
-
-
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/filter.css">
+</head>
 
 <body>
 
@@ -53,157 +49,188 @@
         <!-- End of Navbar -->
     </header>
 
-    <!-- List of Project -->
-    <div class="col-md-12 justify-content-center">
-        <!-- Grid row -->
-        <!-- Grid row -->
-        <div class="row">
+    <main>
+        <!-- List of Project -->
 
-            <!-- Grid column -->
-            <div class="col-md-12 d-flex justify-content-center mb-5">
+        <!-- Grid column -->
+        <div class="col-md-12 d-flex justify-content-center mb-5">
 
-                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Web
-                    Design</button>
-                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">App
-                    Design</button>
-            </div>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Web Design</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">App Design</button>
+
         </div>
-    </div>
-    <div class="wmg-container demo">
-        <div class="wmg-item">
-            <div class="wmg-thumbnail">
-                <div class="wmg-thumbnail-content">
+        <!-- Grid column -->
+        <!-- List of Project -->
 
-                    <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> -->
-                    <img src="img-1.jpg" alt="image">
-
-                </div>
-                <div class="wmg-arrow"></div>
-            </div>
-            <div class="wmg-details"> <span class="wmg-close"></span>
-                <div class="wmg-details-content">
-
-                    <!-- Image details -->
-                    <div class="container exemplo">
-                        <div class="row">
-                            <div class="col-md-6"> <img src="large-1.jpg" alt="image"> </div>
-                            <div class="col-md-6">
-                                <h2>Title 1</h2>
-                                <hr>
-                                <p> Description 1 </p>
-                                <a href="#" class="btn btn-primary btn-lg" title="Read more">Read more</a>
+        <div class="container">
+            <div class="row" id="filters">
+                <div class="col-md-4">
+                    <!-- Project 1 -->
+                    <div class="product-grid pics animation all 2">
+                        <div class="product-image">
+                            <a href="#center-dialog-1" data-toggle="modal" class="image">
+                                <img class="pic-1" src="https://miro.medium.com/max/800/1*xH8iwXokVKanvmmSSJSiBQ.gif">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-button-group">
+                                <a data-target="#center-dialog-1" data-toggle="modal" class="add-to-cart">VIEW</a>
                             </div>
+                            <h3 class="title">Portfolio Web Design</h3>
+                            <div class="price">Design by YSN GTR</div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-        </div>
-
-        <div class="wmg-item">
-            <div class="wmg-thumbnail">
-                <div class="wmg-thumbnail-content">
-
-                    <!-- exemplo de conteudo para thumbnail -->
-                    <img src="img-2.jpg" alt="image">
-                    <!-- fim do exemplo -->
-
-                </div>
-                <div class="wmg-arrow"></div>
-            </div>
-            <div class="wmg-details"> <span class="wmg-close"></span>
-                <div class="wmg-details-content">
-
-                    <!-- exemplo de coteúdo para detail -->
-                    <div class="container exemplo">
-                        <div class="row">
-                            <div class="col-md-6"> <img src="large-2.jpg" alt="image"> </div>
-                            <div class="col-md-6">
-                                <h2>Title 2</h2>
-                                <hr>
-                                <p> Description 2 </p>
-                                <a href="#" class="btn btn-primary btn-lg" title="Read more">Read more</a>
+                <!-- End of Project 1 -->
+                <div class="col-md-4">
+                    <!-- Project 2 -->
+                    <div class="product-grid pics animation all 2">
+                        <div class="product-image">
+                            <a href="#center-dialog-2" data-toggle="modal" class="image">
+                                <img class="pic-1" src="https://miro.medium.com/max/800/0*XbC7o2NxfkFGdb00.gif">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-button-group">
+                                <a data-target="#center-dialog-2" data-toggle="modal" class="add-to-cart">VIEW</a>
                             </div>
+                            <h3 class="title">Food Recipe App Design</h3>
+                            <div class="price">Design by YSN GTR</div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-        </div>
 
-        <div class="wmg-item">
-            <div class="wmg-thumbnail">
-                <div class="wmg-thumbnail-content">
-
-                    <img src="img-3.jpg" alt="image">
-
-                </div>
-                <div class="wmg-arrow"></div>
-            </div>
-            <div class="wmg-details"> <span class="wmg-close"></span>
-                <div class="wmg-details-content">
-
-                    <div class="container exemplo">
-                        <div class="row">
-                            <div class="col-md-6"> <img src="large-3.jpg" alt="image"> </div>
-                            <div class="col-md-6">
-                                <h2>Title 3</h2>
-                                <hr>
-                                <p> Description 3 </p>
-                                <a href="#" class="btn btn-primary btn-lg" title="Read more">Read more</a>
+                <div class="col-md-4">
+                    <!-- Project 3 -->
+                    <div class="product-grid pics animation all 2">
+                        <div class="product-image">
+                            <a href="#center-dialog-3" data-toggle="modal" class="image">
+                                <img class="pic-1" src="https://miro.medium.com/max/800/0*rINWfimUxxfrqukV.gif">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-button-group">
+                                <a data-target="#center-dialog-3" data-toggle="modal" class="add-to-cart">VIEW</a>
                             </div>
+                            <h3 class="title">Music Player App Design</h3>
+                            <div class="price">Design by YSN GTR</div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+            <!-- End of Project 3 -->
 
-    </div>
-    <!-- End List of Project -->
+
+
+            <!-- Modal -->
+
+            <!-- Modal 1 -->
+            <div tabindex="-1" class="modal pmd-modal fade" id="center-dialog-1" style="display: none;"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <div class="media-body">
+                                <h3 class="card-title">Portfolio Web Design</h3>
+                                <p class="card-subtitle">by YSN GTR</p>
+                            </div>
+                            <button aria-hidden="true" data-dismiss="modal" class="close">×</button>
+                        </div>
+                        <div class="pmd-modal-media"><img width="1184" height="666" class="img-fluid"
+                                src="https://miro.medium.com/max/800/1*xH8iwXokVKanvmmSSJSiBQ.gif"> </div>
+                        <div class="modal-body">
+                            <p>Cards provide context and an entry point to more robust information and views. Don't
+                                overload
+                                cards with extraneous information or actions.</p>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of MOdal 1 -->
+
+            <!-- Modal 2 -->
+            <div tabindex="-1" class="modal pmd-modal fade" id="center-dialog-2" style="display: none;"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <div class="media-body">
+                                <h3 class="card-title">Food Recipe App Design</h3>
+                                <p class="card-subtitle">by YSN GTR</p>
+                            </div>
+                            <button aria-hidden="true" data-dismiss="modal" class="close">×</button>
+                        </div>
+                        <div class="pmd-modal-media"><img width="1184" height="666" class="img-fluid"
+                                src="https://miro.medium.com/max/800/0*XbC7o2NxfkFGdb00.gif"> </div>
+                        <div class="modal-body">
+                            <p>Cards provide context and an entry point to more robust information and views. Don't
+                                overload
+                                cards with extraneous information or actions.</p>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of MOdal 2 -->
+
+            <!-- Modal 3 -->
+            <div tabindex="-1" class="modal pmd-modal fade" id="center-dialog-3" style="display: none;"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <div class="media-body">
+                                <h3 class="card-title">Music Player App Design</h3>
+                                <p class="card-subtitle">by YSN GTR</p>
+                            </div>
+                            <button aria-hidden="true" data-dismiss="modal" class="close">×</button>
+                        </div>
+                        <div class="pmd-modal-media"><img width="1184" height="666" class="img-fluid"
+                                src="https://miro.medium.com/max/800/0*rINWfimUxxfrqukV.gif"> </div>
+                        <div class="modal-body">
+                            <p>Cards provide context and an entry point to more robust information and views. Don't
+                                overload
+                                cards with extraneous information or actions.</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of MOdal 2 -->
+        </div>
+        <!-- End List of Project -->
+    </main>
+
+
+
+
+
 
     <script>
-        $(document).ready(function () {
-            $('.demo').WMGridfolio();
-        });
-
-        $fn.WMGridfolio({
-            selectors: {
-                item: 'wmg-item',
-                thumbnail: 'wmg-thumbnail',
-                details: 'wmg-details',
-                close: 'wmg-close',
-                arrow: 'wmg-arrow'
-            },
-            thumbnail: {
-                columns: 6,
-                minSize: 100,
-                margin: 5
-            },
-            details: {
-                minHeight: 400,
-                speed: 350,
-                full_w: false
-            },
-            config: {
-                open: 'open',
-                openToTop: true,
-                hasImg: true,
-                keepOpen: false,
-                onlyThumb: false
-            },
-            callbacks: {
-                CB_LoadGrid: false,
-                CB_ResizeGrid: false,
-                CB_OpenDetail: false,
-                CB_CloseDetail: false,
-                CB_CloseAll: false
-            }
+        $(function () {
+            var selectedClass = "";
+            $(".filter").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#filters").fadeTo(100, 0.1);
+                $("#filters div").not("." + selectedClass).fadeOut().removeClass('animation');
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn().addClass('animation');
+                    $("#filters").fadeTo(300, 1);
+                }, 300);
+            });
         });
     </script>
 
-    </head>
 </body>
 
 </html>
