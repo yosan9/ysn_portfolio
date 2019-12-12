@@ -1,0 +1,102 @@
+#headerPopup {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 13px 15px;
+    border: none;
+    perspective: 200px;
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+
+.btn:hover {
+    color: rgb(228, 228, 228);
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    background-color: yellowgreen;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+
+.btn:after {
+    top: auto;
+    bottom: 0;
+}
+
+.btn:hover:before {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+    transform: rotateX(-60deg);
+    transform-origin: top center;
+    transform-style: preserve-3d;
+}
+
+.btn:hover:after {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+    transform: rotateX(60deg);
+    transform-origin: bottom center;
+    transform-style: preserve-3d;
+}
+
+.btn.red:hover {
+    color: #ff3838;
+}
+
+.btn.red:before {
+    background-color: #ff3838;
+}
+
+.btn.red:after {
+    background-color: #ff3838;
+}
+
+.btn.blue:hover {
+    color: #1B9CFC;
+}
+
+.btn.blue:before {
+    background-color: #1B9CFC;
+}
+
+.btn.blue:after {
+    background-color: #1B9CFC;
+}
+
+.btn.green:hover {
+    color: #05c46b;
+}
+
+.btn.green:before {
+    background-color: #05c46b;
+}
+
+.btn.green:after {
+    background-color: #05c46b;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn {
+        margin-bottom: 20px;
+    }
+}

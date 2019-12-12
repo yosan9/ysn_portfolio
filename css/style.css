@@ -8,6 +8,15 @@
     color: rgb(252, 252, 252);
 }
 
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 2;
+    background-color: white;
+    border: yellowgreen;
+    border-radius: .25rem;
+}
+
 .navbar-brand {
     color: yellowgreen;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,17 +53,27 @@
 }
 
 .section-1 {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 200% 0, 100% 100%, 0 100%);
-    height: 350px;
+    -webkit-clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%);
+    clip-path: polygon(0 0, 200% 0, 200% 200%, 0 200%);
     margin-top: 100px;
+    margin-bottom: 120px;
 
 }
 
 .section-2 {
+    margin-bottom: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url('../asset/frame_01_bike_drib.gif');
+    color: white;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 200% 0, 100% 100%, 0 100%);
-    margin: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-3 {

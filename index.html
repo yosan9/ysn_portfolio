@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YSN GTR</title>
-
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/progrees.css">
+    <link rel="stylesheet" href="css/pop-up.css">
+    <link rel="stylesheet" href="css/profile-card.css">
 
 
 </head>
@@ -36,10 +35,10 @@
                             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section-2">My Story</a>
+                            <a class="nav-link" href="#section-1">My Skils</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section-1">My Skills</a>
+                            <a class="nav-link" href="#section-2">My Story</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#section-3">Portfolio</a>
@@ -53,8 +52,7 @@
     </header>
     <main>
         <div id="home" class="jumbotron jumbotron-fluid">
-            <div class="container text-right">
-
+            <div class="container">
             </div>
         </div>
 
@@ -62,12 +60,12 @@
 
 
         <!-- //Skils -->
-        <div id="section-1" class="section-1">
+        <div class="section-1">
             <div class="col-md-12 text-center">
                 <div class="col-md-12 justify-content-center">
                     <div class="col-md-12 text-center">
                         <div class="section-title">
-                            <h3>My Skills</h3>
+                            <h2 id="section-1"><strong> My Skills</strong></h2>
                             <p>I am using various digital tool for my services. <br> Most are adobe
                                 product.
                                 Check
@@ -146,8 +144,21 @@
 
         <!-- Video Profile -->
         <div id="section-2" class="section-2">
-            <div class="col-md-12 text-center">
-
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center display-4 mt-5">
+                        Web and App Design &amp; Check My Video profile
+                    </h2>
+                    <p class="text-center mt-5">
+                        <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-lg popup-modal">See
+                            My Video Profile</a>
+                    </p>
+                    <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="854" height="480"
+                            src="https://www.youtube.com/embed/qN3OueBm9F4" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -156,8 +167,8 @@
 
 
         <!-- My Product -->
-        <div id="section-3" class="section-3">
-            <div class="col-md-12 text-center">
+        <div class="section-3">
+            <div id="section-3" class="col-md-12 text-center">
                 <h2> <strong> My Portfolio</strong></h2>
                 <div class="col-md-12 text-center">
                     <p>The portfolio is conveying quality and experience of my services. <br> See
