@@ -6,6 +6,8 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .product-grid .product-image {
@@ -97,4 +99,28 @@
     .product-grid .product-button-group a.add-to-cart {
         font-size: 14px;
     }
+}
+
+/* Filter */
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+}
+
+#filters li {
+    float: left;
+}
+
+#filters li span {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+#filters li span.active {
+    background: #e95a44;
+    color: #fff;
 }
